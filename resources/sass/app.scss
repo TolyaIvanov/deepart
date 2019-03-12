@@ -1,0 +1,15 @@
+@import "header/header.scss";
+@import "gap/gap";
+@import "contacts/contacts";
+@import "about/about";
+@import "portfolio/portfolio";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+}
