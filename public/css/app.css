@@ -1,48 +1,206 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);.navbar {
+@import url(https://fonts.googleapis.com/css?family=Montserrat);@import url(https://fonts.googleapis.com/css?family=Kalam);.navbar {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  z-index: 100;
+  width: inherit;
 }
 
 .navbar .navbar-menu {
   min-width: 320px;
-  width: 50%;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 54px;
   margin: 0;
   list-style-type: none;
-  color: #333;
-  position: fixed;
+  color: #ddd;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
-  box-sizing: border-box;
-  padding: 0 20px;
-  border-bottom: 1px solid #636b6f;
-  z-index: 100;
+  padding: 6px 20px 0 20px;
 }
 
 .navbar .navbar-menu .navbar-item {
+  text-align: center;
   cursor: pointer;
-  transition: 0.1s;
+  margin: 0 5px;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.navbar .navbar-menu .navbar-item:hover {
-  border-bottom: 3px solid #636b6f;
+.navbar .navbar-menu .more {
+  width: 50px;
 }
 
-.gap {
+.navbar .navbar-menu .navbar-more {
   position: relative;
+  display: inline-block;
+  box-sizing: content-box;
+  width: 30px;
+  height: 12px;
+  margin: 0;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.big-picture {
-  background: url(/images/header-back-big.jpg?43f8101e6faa6cdc40013fb55c3b004c) no-repeat center center/cover fixed;
-  /* Full height */
+.navbar .navbar-menu .navbar-more:before,
+.navbar .navbar-menu .navbar-more:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 30px;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.navbar .navbar-menu .navbar-more:after {
+  width: 16px;
+  top: 20px;
+}
+
+.navbar .navbar-item-logo {
+  flex: 0 0 36px;
+  height: 36px;
+}
+
+.slider-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
   height: 100vh;
+  z-index: 1;
+}
+
+#block-for-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#viewport {
+  width: 100%;
+  height: inherit;
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#slidewrapper {
+  position: relative;
+  width: calc(100% * 4);
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  transition: 1.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#slidewrapper,
+#slidewrapper .slide,
+#slidewrapper .slide img {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#slidewrapper .slide {
+  width: calc(100% / 4);
+  list-style: none;
+  display: inline;
+  float: left;
+}
+
+.slide-img {
+  width: 100%;
 }
 
 .about {
+  position: relative;
+  z-index: 10;
   height: 100vh;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about .about-title {
+  font-size: 3rem;
+  max-width: 550px;
+  font-family: Kalam, sans-serif;
+  padding-left: 30px;
+}
+
+.about .about-text {
+  font-size: 1.2em;
+  font-weight: 500;
+  min-width: 300px;
+  width: 40%;
+  text-align: left;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.portfolio .portfolio-title {
+  text-align: left;
+  margin: 50px 0 50px 200px;
+  font-weight: 700;
+  font-size: 4.375rem;
+}
+
+.portfolio .portfolio-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.portfolio .portfolio-part .description {
+  width: 30%;
+  text-align: center;
+}
+
+.portfolio .portfolio-part .photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .portfolio-part .photos .photo {
+  cursor: pointer;
+  margin: 30px;
+  width: 30%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-part .photos .photo:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 body {
@@ -51,5 +209,11 @@ body {
   font-size: 1em;
   line-height: 1.4;
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
 }
 

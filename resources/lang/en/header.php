@@ -1,8 +1,6 @@
 <?php
 
 return [
-    'about' => 'About us',
-    'portfolio' => 'Portfolio',
-    'contacts' => 'Contacts',
+    'order' => 'Buy now',
     'try' => 'Try it'
 ];

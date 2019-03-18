@@ -5,4 +5,6 @@
  * application frontend using useful Laravel and JavaScript libraries.
  */
 
-require('./bootstrap');
+require('./index');
+require('./scroll/header/header');
+require('./slider/slider');

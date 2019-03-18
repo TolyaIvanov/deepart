@@ -7,15 +7,17 @@
     <meta name="application-name" content="egor">
     <title>egor</title>
     <link href="{{mix('css/app.css')}}" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-<div class="wrap">
+<div class="container wrap">
     @include('templates.header')
-    @include('templates.gap', ['picture' => 'big'])
+    @include('templates.slider')
     @include('templates.about')
-    @include('templates.gap', ['picture' => 'a-lot-smalls'])
+    {{--@include('templates.services')--}}
     @include('templates.portfolio')
-    @include('templates.gap', ['picture' => 'example'])
     @include('templates.contact')
 </div>
 <script src="{{mix('js/app.js')}}"></script>

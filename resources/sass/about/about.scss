@@ -1,3 +1,24 @@
 .about {
+  position: relative;
+  z-index: 10;
   height: 100vh;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .about-title {
+    font-size: 3rem;
+    max-width: 550px;
+    font-family: Kalam, sans-serif;
+    padding-left: 30px;
+  }
+
+  .about-text {
+    font-size: 1.2em;
+    font-weight: 500;
+    min-width: 300px;
+    width: 40%;
+    text-align: left;
+  }
 }
