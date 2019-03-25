@@ -67,6 +67,7 @@
 }
 
 .navbar .navbar-item-logo {
+  cursor: pointer;
   flex: 0 0 36px;
   height: 36px;
 }
@@ -171,26 +172,29 @@
 
 .portfolio .portfolio-part {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 25px;
-}
-
-.portfolio .portfolio-part .description {
-  width: 30%;
-  text-align: center;
-}
-
-.portfolio .portfolio-part .photos {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.portfolio .portfolio-part .description {
+  width: 20%;
+  text-align: center;
+  font-family: Kalam, sans-serif;
+  font-size: 1.6em;
+}
+
+.portfolio .portfolio-part .photos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
 .portfolio .portfolio-part .photos .photo {
+  z-index: 10;
   cursor: pointer;
   margin: 30px;
-  width: 30%;
+  max-width: 100%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -199,8 +203,95 @@
 }
 
 .portfolio .portfolio-part .photos .photo:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.portfolio .generate .photos .photo,
+.portfolio .deep-dream .photos .photo {
+  width: calc(50% - 35px);
+}
+
+.portfolio .style-transfer {
+  flex-direction: column;
+}
+
+.portfolio .style-transfer .description {
+  margin-left: 30%;
+}
+
+.portfolio .style-transfer .style-transfer-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .portfolio .deep-dream .description {
+    margin-top: -35%;
+  }
+
+  .portfolio .deep-dream .photos {
+    flex-direction: column;
+  }
+
+  .portfolio .deep-dream .photos .photo {
+    width: 60%;
+    margin: 10px;
+  }
+
+  .portfolio .deep-dream .photos .first {
+    margin-left: 25%;
+  }
+
+  .portfolio .deep-dream .photos .second {
+    margin-right: 40%;
+  }
+}
+
+.try {
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.try .try-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.try .try-content .try-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+}
+
+.try .try-content .try-menu .try-menu-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 12px 0;
+  height: 40px;
+}
+
+.try .try-content .try-menu .active {
+  border-right: 1px solid red;
+}
+
+.try .try-styles {
+  width: 90%;
+  border: 1px solid grey;
 }
 
 body {

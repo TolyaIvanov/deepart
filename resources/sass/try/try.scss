@@ -1,0 +1,43 @@
+.try {
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .try-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .try-menu {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 10%;
+
+      .try-menu-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 12px 0;
+        height: 40px;
+      }
+
+      .active {
+        border-right: 1px solid red;
+      }
+    }
+  }
+
+  .try-styles {
+    width: 90%;
+    border: 1px solid grey;
+  }
+}

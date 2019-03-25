@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layout');
-});
+Route::get('/', 'IndexController@index');

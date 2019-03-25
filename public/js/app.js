@@ -113,8 +113,6 @@ __webpack_require__(/*! ./slider/slider */ "./resources/js/slider/slider.js");
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-AOS.init();
-AOS.init();
 AOS.init({
   // Global settings:
   disable: false,

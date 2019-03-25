@@ -10,15 +10,15 @@
         </div>
     </div>
     <div class="portfolio-part style-transfer">
+        <div class="description">
+            @lang('portfolio.description-style-transfer')
+        </div>
         <div class="photos">
             <div class="style-transfer-input input">
                 <img class="photo first" src="{{ URL::asset('images/portfolio/style-transfer-input.jpg') }}" alt="">
                 <img class="photo second" src="{{ URL::asset('images/portfolio/style-transfer-style.jpg') }}" alt="">
             </div>
-            <img class="style-transfer-output photo" src="{{ URL::asset('images/portfolio/style-transfer-output.png') }}" alt="">
-        </div>
-        <div class="description">
-            @lang('portfolio.description-style-transfer')
+            <img class="style-transfer-output photo" src="{{ URL::asset('images/portfolio/style-transfer-output.jpg') }}" alt="">
         </div>
     </div>
     <div class="portfolio-part deep-dream">
@@ -26,8 +26,8 @@
             @lang('portfolio.description-deep-dream')
         </div>
         <div class="photos">
-            <img class="photo" src="{{ URL::asset('images/portfolio/deep-dream-input.jpg') }}" alt="">
-            <img class="photo" src="{{ URL::asset('images/portfolio/deep-dream-output.jpg') }}" alt="">
+            <img class="photo first" src="{{ URL::asset('images/portfolio/deep-dream-input.jpg') }}" alt="">
+            <img class="photo second" src="{{ URL::asset('images/portfolio/deep-dream-output.jpg') }}" alt="">
         </div>
     </div>
 </section>

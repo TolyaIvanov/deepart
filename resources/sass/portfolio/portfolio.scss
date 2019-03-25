@@ -13,24 +13,27 @@
 
   .portfolio-part {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 25px;
 
     .description {
-      width: 30%;
+      width: 20%;
       text-align: center;
+      font-family: Kalam, sans-serif;
+      font-size: 1.6em;
     }
 
     .photos {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
+      width: 100%;
 
       .photo {
+        z-index: 10;
         cursor: pointer;
         margin: 30px;
-        width: 30%;
+        max-width: 100%;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -43,16 +46,62 @@
       }
 
       .photo:hover {
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        transform: scale(1.2);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
       }
     }
+  }
 
-    .generate {
+  .generate, .deep-dream {
+    .photos .photo {
+      width: calc(50% - 35px);
+    }
+  }
 
+  .style-transfer {
+    flex-direction: column;
+
+    .description {
+      margin-left: 30%;
+    }
+
+    .style-transfer-input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .portfolio {
+
+    .deep-dream {
+
+      .description {
+        margin-top: -35%;
+      }
+
+      .photos {
+        flex-direction: column;
+
+        .photo {
+          width: 60%;
+          margin: 10px;
+        }
+
+        .first {
+          margin-left: 25%;
+        }
+
+        .second {
+          margin-right: 40%;
+        }
+      }
     }
   }
 }
