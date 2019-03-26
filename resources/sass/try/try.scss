@@ -1,10 +1,22 @@
 .try {
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
+
+  .try-title {
+    width: 100%;
+    text-align: left;
+    margin: 50px 0 50px 0;
+    font-weight: 700;
+    font-size: 4.375rem;
+  }
+
+  .try-part .photo {
+    max-width: 225px;
+  }
 
   .try-content {
     width: 100%;
@@ -20,24 +32,81 @@
       flex-direction: column;
       align-items: center;
       width: 10%;
+      min-width: 120px;
 
       .try-menu-item {
+        cursor: pointer;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        -ms-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
         display: flex;
         align-items: center;
         width: 100%;
-        padding: 0;
+        min-width: 120px;
         margin: 12px 0;
         height: 40px;
+        padding-left: 3px;
       }
 
       .active {
-        border-right: 1px solid red;
+        background-color: rgba(0,0,0, .1);
       }
     }
   }
 
   .try-styles {
     width: 90%;
-    border: 1px solid grey;
+
+    .generate-art {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .style-transfer {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+
+      .input, .styles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .photo-hidden {
+        display: none;
+      }
+    }
+
+    .deep-dream {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .input, .output {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+
+    .try-part {
+      display: none;
+    }
+
+    .visible {
+      display: flex;
+    }
+
+    .photo {
+      margin: 10px;
+    }
   }
 }

@@ -104,6 +104,8 @@ __webpack_require__(/*! ./scroll/header/header */ "./resources/js/scroll/header/
 
 __webpack_require__(/*! ./slider/slider */ "./resources/js/slider/slider.js");
 
+__webpack_require__(/*! ./try/try */ "./resources/js/try/try.js");
+
 /***/ }),
 
 /***/ "./resources/js/index.js":
@@ -210,6 +212,28 @@ function nextSlide() {
     slideNow++;
   }
 }
+
+/***/ }),
+
+/***/ "./resources/js/try/try.js":
+/*!*********************************!*\
+  !*** ./resources/js/try/try.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var tryMenu = $('.try .try-menu-item');
+var tryStyles = $('.try .try-styles .try-part');
+tryMenu.map(function (key, item) {
+  item.addEventListener('click', function () {
+    if (!item.className.split(" ").includes("active")) {
+      $('.try .try-menu .active').removeClass('active');
+      $('.try .try-styles .visible').removeClass('visible');
+      tryMenu[key].classList.add('active');
+      tryStyles[key].classList.add('visible');
+    }
+  }, false);
+});
 
 /***/ }),
 
