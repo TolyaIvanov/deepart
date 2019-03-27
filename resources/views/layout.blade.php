@@ -18,7 +18,7 @@
     @include('templates.about')
     @include('templates.portfolio')
     @include('templates.try')
-    @include('templates.contact')
+    @include('templates.footer')
 </div>
 <script src="{{mix('js/app.js')}}"></script>
 </body>
