@@ -15,36 +15,36 @@
             <div class="try-part visible">
                 <div class="generate-art grid">
                     @foreach($images_try_generate as $image_url)
-                        <div class="photo"><img src="{{$image_url}}" alt=""></div>
+                        <img class="photo" src="{{$image_url}}" alt="">
                     @endforeach
                 </div>
             </div>
             <div class="try-part style-transfer">
                 <div class="input grid">
                     @foreach($images_try_style_transfer_input as $image_url)
-                        <div class="photo"><img src="{{$image_url}}" alt=""></div>
+                        <img class="photo" src="{{$image_url}}" alt="">
                     @endforeach
                 </div>
                 <div class="styles grid hidden">
                     @foreach($images_try_style_transfer_style as $image_url)
-                        <div class="photo"><img src="{{$image_url}}" alt=""></div>
+                        <img class="photo" src="{{$image_url}}" alt="">
                     @endforeach
                 </div>
                 <div class="output grid hidden">
                     @foreach($images_try_style_transfer_output as $image_url)
-                        <div class="photo photo-hidden"><img src="{{$image_url}}" alt=""></div>
+                        <img class="photo" src="{{$image_url}}" alt="">
                     @endforeach
                 </div>
             </div>
             <div class="try-part deep-dream">
                 <div class="input grid">
                     @foreach($images_try_deep_dream_input as $image_url)
-                        <div class="photo"><img src="{{$image_url}}" alt=""></div>
+                        <img class="photo" src="{{$image_url}}" alt="">
                     @endforeach
                 </div>
                 <div class="output grid hidden">
                     @foreach($images_try_deep_dream_output as $image_url)
-                        <div class="photo"><img src="{{$image_url}}" alt=""></div>
+                        <img class="photo" src="{{$image_url}}" alt="">
                     @endforeach
                 </div>
             </div>

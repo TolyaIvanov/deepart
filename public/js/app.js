@@ -106,6 +106,8 @@ __webpack_require__(/*! ./slider/slider */ "./resources/js/slider/slider.js");
 
 __webpack_require__(/*! ./try/try */ "./resources/js/try/try.js");
 
+__webpack_require__(/*! ./modal */ "./resources/js/modal.js");
+
 /***/ }),
 
 /***/ "./resources/js/index.js":
@@ -152,6 +154,37 @@ AOS.init({
 
 /***/ }),
 
+/***/ "./resources/js/modal.js":
+/*!*******************************!*\
+  !*** ./resources/js/modal.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// open modal
+var wrap = $('.wrap');
+var photo = $('.photo');
+var modalPhoto = $('.modal .modal-photo');
+var modal = $('.cover, .modal .modal-window');
+photo.on('click', function () {
+  if ($(window).width() > 900) {
+    modalPhoto.attr('src', '' + $(this).attr('src'));
+    modal.fadeIn();
+  }
+}); // close modal
+
+$('.modal').click(function () {
+  wrap.on('click', function (event) {
+    var select = $('.modal-window img');
+    if ($(event.target).closest(select).length) return;
+    modal.fadeOut();
+    modalPhoto.attr('src', '');
+    wrap.unbind('click');
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/scroll/header/header.js":
 /*!**********************************************!*\
   !*** ./resources/js/scroll/header/header.js ***!
@@ -159,25 +192,26 @@ AOS.init({
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$(function () {
-  //TODO make throttle
-  $(window).scroll(function () {
-    var logoSet = $('.navbar .navbar-item-logo path')[0];
-    var listItems = $('.navbar .navbar-item');
-
-    if ($(window).scrollTop() > $(window).height() - 32) {
-      listItems.map(function (key, item) {
-        item.style.color = "#333";
-      });
-      logoSet.style.fill = "#333";
-    } else {
-      listItems.map(function (key, item) {
-        item.style.color = "#ddd";
-      });
-      logoSet.style.fill = "#ddd";
-    }
-  });
-});
+// $(function () {
+//     //TODO make throttle
+//     $(window).scroll(function () {
+//         let logoSet = $('.navbar .navbar-item-logo path')[0];
+//         let listItems = $('.navbar .navbar-item');
+//
+//         if ($(window).scrollTop() > ($(window).height() - 32)) {
+//             listItems.map(function (key, item) {
+//                 item.style.color = "#333";
+//             });
+//             logoSet.style.fill = "#333";
+//         } else {
+//             listItems.map(function (key, item) {
+//                 item.style.color = "#ddd";
+//             });
+//             logoSet.style.fill = "#ddd";
+//         }
+//     })
+// });
+//
 
 /***/ }),
 

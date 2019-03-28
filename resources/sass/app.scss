@@ -4,11 +4,13 @@
 @import "about/about";
 @import "portfolio/portfolio";
 @import "try/try";
+@import "modal/modal";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Kalam');
 
 body {
+  min-width: 445px;
   padding: 0;
   margin: 0;
   font-size: 1em;
@@ -22,4 +24,14 @@ body {
 .container {
   width: 92%;
   margin: 0 auto;
+}
+
+.wrap {
+
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 96%;
+  }
 }

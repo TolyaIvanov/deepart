@@ -12,13 +12,16 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-<div class="container wrap">
+<div class="wrap">
     @include('templates.header')
-    @include('templates.slider')
-    @include('templates.about')
-    @include('templates.portfolio')
-    @include('templates.try')
+    <div class="container">
+        @include('templates.slider')
+        @include('templates.about')
+        @include('templates.portfolio')
+        @include('templates.try')
+    </div>
     @include('templates.footer')
+    @include('modal.modal')
 </div>
 <script src="{{mix('js/app.js')}}"></script>
 </body>

@@ -9,3 +9,4 @@ require('./index');
 require('./scroll/header/header');
 require('./slider/slider');
 require('./try/try');
+require('./modal');

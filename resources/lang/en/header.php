@@ -2,5 +2,6 @@
 
 return [
     'order' => 'Buy now',
-    'try' => 'Try it'
+    'try' => 'How it works',
+    'portfolio' => 'Portfolio',
 ];

@@ -1,0 +1,34 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .cover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 100;
+  }
+
+  .modal-window {
+    display: none;
+    position: fixed;
+    top: 5%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 20px;
+    z-index: 200;
+  }
+
+  .modal-photo {
+    max-width: 90vw;
+    max-height: 80vh;
+  }
+}

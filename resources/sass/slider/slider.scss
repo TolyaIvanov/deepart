@@ -43,7 +43,7 @@
   transition-timing-function: ease-in-out;
 }
 
-#slidewrapper, #slidewrapper .slide,  #slidewrapper .slide img{
+#slidewrapper, #slidewrapper .slide, #slidewrapper .slide img {
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -58,4 +58,20 @@
 
 .slide-img {
   width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    #slidewrapper {
+      display: none;
+    }
+
+    #viewport {
+      background-image: url("./../../images/slider/mobile-background.jpg");
+      background-repeat: no-repeat;
+      -webkit-background-size: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+  }
 }

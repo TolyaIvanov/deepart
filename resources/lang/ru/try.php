@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'title' => 'Try our service',
+    'title' => 'Как это работает',
 ];
