@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1"
-	 width="64px"
-	 height="48px"
 	 id="Слой_1" inkscape:export-xdpi="199" inkscape:export-ydpi="199" inkscape:version="0.92.4 (33fec40, 2019-01-16)" sodipodi:docname="logo-text.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 32"
-	 style="enable-background:new 0 0 64 32;" xml:space="preserve">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 554.2 316.5"
+	 style="enable-background:new 0 0 554.2 316.5;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#0B1C2C;}
 	.st1{fill:#4FE294;}
-	.st2{font-family:'ArialMT';}
-	.st3{font-size:11.1751px;}
-	.st4{fill:none;stroke:#4FE294;stroke-width:0.8906;stroke-miterlimit:10;}
-	.st5{font-size:19.2913px;}
-	.st6{font-size:33.9916px;}
-	.st7{fill:none;}
+	.st2{font-family:'Plump';}
+	.st3{font-size:90px;}
+	.st4{font-size:100px;}
+	.st5{fill:none;}
 </style>
 <sodipodi:namedview  bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview2105" inkscape:current-layer="Слой_1" inkscape:cx="-137.17645" inkscape:cy="499.59455" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="1025" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="0" inkscape:window-y="27" inkscape:zoom="0.64" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
 	</sodipodi:namedview>
-<path id="path6" class="st0" d="M-40.2-34.6c-0.3,0.3-0.6,0.7-0.7,1"/>
-<text transform="matrix(1.0353 0 0 1 1.3711 10.8105)" class="st1 st2 st3">neuro</text>
-<text id="text2082" transform="matrix(1.0353 0 0 1 1.3711 10.8105)" class="st4 st2 st3">neuro</text>
-<text id="text2084" transform="matrix(1.0433 0 0 1 0 27.5073)" class="st1 st2 st5">art</text>
-<g id="g2088" transform="matrix(1.2974368,0,0,1.4200269,-423.03421,-214.21161)">
-	<text id="text2086" transform="matrix(0.7042 0 0 0.7042 357.5092 170.5394)" class="st1 st2 st6">ai</text>
-</g>
-<polygon class="st7" points="6.7,8.2 31.7,8.2 31.7,8.2 6.7,8.2 "/>
+<path id="path6" class="st0" d="M373.3,205.5c-0.3,0.3-0.6,0.7-0.7,1"/>
+<text transform="matrix(1.0353 0 0 1 41.7183 116.5414)" class="st1 st2 st3">neuro</text>
+<text id="text2084" transform="matrix(1.0433 0 0 1 41.7182 248.3094)" class="st1 st2 st3">art</text>
+<text id="text2086" transform="matrix(0.8603 0 0 1 397.2001 185.2582)" class="st1 st2 st4">ai</text>
+<polygon class="st5" points="420.2,248.3 445.2,248.3 445.2,248.3 420.2,248.3 "/>
 </svg>
