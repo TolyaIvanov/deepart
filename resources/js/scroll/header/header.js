@@ -1,20 +1,14 @@
-// $(function () {
-//     //TODO make throttle
-//     $(window).scroll(function () {
-//         let logoSet = $('.navbar .navbar-item-logo path')[0];
-//         let listItems = $('.navbar .navbar-item');
-//
-//         if ($(window).scrollTop() > ($(window).height() - 32)) {
-//             listItems.map(function (key, item) {
-//                 item.style.color = "#333";
-//             });
-//             logoSet.style.fill = "#333";
-//         } else {
-//             listItems.map(function (key, item) {
-//                 item.style.color = "#ddd";
-//             });
-//             logoSet.style.fill = "#ddd";
-//         }
-//     })
-// });
-//
+let portfolionLink = $('.navbar .portfolio-link');
+let tryLink = $('.navbar .try-link');
+
+portfolionLink.on('click', function () {
+    $('html, body').animate({
+        scrollTop: ($('.portfolio').first().offset().top)
+    },500);
+});
+
+tryLink.on('click', function () {
+    $('html, body').animate({
+        scrollTop: ($('.try').first().offset().top)
+    },500);
+});

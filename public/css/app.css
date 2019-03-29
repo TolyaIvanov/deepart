@@ -17,6 +17,7 @@
   width: 100%;
   height: 54px;
   margin: 0;
+  padding: 0;
   list-style-type: none;
   color: #ddd;
   display: flex;
@@ -35,13 +36,25 @@
   flex-direction: column;
 }
 
+.navbar .navbar-menu .telegram-link {
+  text-decoration: none;
+  color: #ddd;
+}
+
 .navbar .navbar-item-logo {
   cursor: pointer;
   flex: 0 0 36px;
   height: 36px;
 }
 
+@media only screen and (max-width: 900px) {
+  .navbar {
+    padding: 0 5px;
+  }
+}
+
 .slider-shadow {
+  min-width: 375px;
   position: absolute;
   top: 0;
   left: 0;
@@ -52,6 +65,7 @@
 }
 
 #block-for-slider {
+  min-width: 375px;
   position: absolute;
   top: 0;
   left: 0;
@@ -147,7 +161,13 @@
   height: 100vh;
   color: #ddd;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about .about-left {
+  max-width: 600px;
+  display: flex;
   flex-direction: column;
 }
 
@@ -164,6 +184,10 @@
   min-width: 300px;
   width: 40%;
   text-align: left;
+}
+
+.about .logo-big {
+  margin-left: 15%;
 }
 
 .portfolio {
@@ -251,11 +275,11 @@
   }
 
   .portfolio .deep-dream .photos .first {
-    margin-left: 25%;
+    margin-left: 15%;
   }
 
   .portfolio .deep-dream .photos .second {
-    margin-right: 40%;
+    margin-right: 20%;
   }
 }
 
@@ -273,8 +297,17 @@
     margin: 0;
   }
 
+  .portfolio .style-transfer .photos img {
+    width: 60%;
+  }
+
   .portfolio .photos {
     flex-direction: column;
+  }
+
+  .portfolio .generate .photos .photo,
+  .portfolio .deep-dream .photos .photo {
+    width: 80%;
   }
 }
 
@@ -475,8 +508,12 @@
   max-height: 80vh;
 }
 
+html {
+  min-width: 375px;
+}
+
 body {
-  min-width: 445px;
+  min-width: 320px;
   padding: 0;
   margin: 0;
   font-size: 1em;

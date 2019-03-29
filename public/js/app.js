@@ -192,26 +192,18 @@ $('.modal').click(function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// $(function () {
-//     //TODO make throttle
-//     $(window).scroll(function () {
-//         let logoSet = $('.navbar .navbar-item-logo path')[0];
-//         let listItems = $('.navbar .navbar-item');
-//
-//         if ($(window).scrollTop() > ($(window).height() - 32)) {
-//             listItems.map(function (key, item) {
-//                 item.style.color = "#333";
-//             });
-//             logoSet.style.fill = "#333";
-//         } else {
-//             listItems.map(function (key, item) {
-//                 item.style.color = "#ddd";
-//             });
-//             logoSet.style.fill = "#ddd";
-//         }
-//     })
-// });
-//
+var portfolionLink = $('.navbar .portfolio-link');
+var tryLink = $('.navbar .try-link');
+portfolionLink.on('click', function () {
+  $('html, body').animate({
+    scrollTop: $('.portfolio').first().offset().top
+  }, 500);
+});
+tryLink.on('click', function () {
+  $('html, body').animate({
+    scrollTop: $('.try').first().offset().top
+  }, 500);
+});
 
 /***/ }),
 
@@ -227,7 +219,9 @@ var slideCount = $('#slidewrapper').children().length;
 var slideInterval = 5500;
 var translateWidth = 0;
 $(function () {
-  setInterval(nextSlide, slideInterval);
+  if ($(window).width() > 900) {
+    setInterval(nextSlide, slideInterval);
+  }
 });
 
 function nextSlide() {

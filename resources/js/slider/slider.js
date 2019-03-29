@@ -4,7 +4,9 @@ let slideInterval = 5500;
 let translateWidth = 0;
 
 $(function () {
-    setInterval(nextSlide, slideInterval);
+    if ($(window).width() > 900) {
+        setInterval(nextSlide, slideInterval);
+    }
 });
 
 function nextSlide() {

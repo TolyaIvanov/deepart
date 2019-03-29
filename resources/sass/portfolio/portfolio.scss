@@ -93,11 +93,11 @@
         }
 
         .first {
-          margin-left: 25%;
+          margin-left: 15%;
         }
 
         .second {
-          margin-right: 40%;
+          margin-right: 20%;
         }
       }
     }
@@ -118,8 +118,18 @@
       }
     }
 
+    .style-transfer .photos img {
+      width: 60%;
+    }
+
     .photos {
       flex-direction: column;
+    }
+
+    .generate, .deep-dream {
+      .photos .photo {
+        width: 80%;
+      }
     }
   }
 }

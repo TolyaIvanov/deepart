@@ -9,8 +9,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Kalam');
 
+html {
+  min-width: 375px;
+}
+
 body {
-  min-width: 445px;
+  min-width: 320px;
   padding: 0;
   margin: 0;
   font-size: 1em;
@@ -24,10 +28,6 @@ body {
 .container {
   width: 92%;
   margin: 0 auto;
-}
-
-.wrap {
-
 }
 
 @media only screen and (max-width: 900px) {
