@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'IndexController@index');
+
+Route::post('/', 'IndexController@saveMail')->name('save');

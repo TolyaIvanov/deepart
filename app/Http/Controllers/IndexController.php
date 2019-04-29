@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+use App\Mails;
+use Illuminate\Support\Facades\Mail;
+
 
 class IndexController extends Controller
 {
@@ -27,12 +31,34 @@ class IndexController extends Controller
         return view("layout", $urls);
     }
 
+    public function saveMail(Request $request)
+    {
+        $email = $request->get('mail');
+        $name = $request->get('name');
+
+        $found = Mails::where('email', $email)->count();
+
+        if ($found == 0) {
+            $share = new Mails([
+                'name' => $name,
+                'email' => $email,
+            ]);
+            $share->save();
+
+            Mail::to('gnom228228228@gmail.com')->send(new ContactMail($name, $email));
+        }
+
+
+
+        return redirect('/');
+    }
+
     private function get_url($files)
     {
         $urls = [];
 
         foreach ($files as $file) {
-            array_push($urls, $file->getPath() . "/" . $file->getFilename());
+            array_push($urls, $file->getPath()."/".$file->getFilename());
         }
         return $urls;
     }

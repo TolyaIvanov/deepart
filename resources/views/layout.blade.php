@@ -9,16 +9,16 @@
     <link href="{{mix('css/app.css')}}" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">AOS.init();</script>
 </head>
 <body>
 <div class="wrap">
     @include('templates.header')
     <div class="container">
-        @include('templates.slider')
         @include('templates.about')
         @include('templates.portfolio')
         @include('templates.try')
+        @include('email.email')
     </div>
     @include('templates.footer')
     @include('modal.modal')

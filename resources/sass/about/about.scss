@@ -1,13 +1,14 @@
 .about {
   position: relative;
+  overflow: hidden;
   z-index: 10;
   height: 100vh;
-  color: #ddd;
+  color: #000;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: space-around;
 
-  .about-left {
+  .about-bar {
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -24,11 +25,7 @@
     font-size: 1.2em;
     font-weight: 500;
     min-width: 300px;
-    width: 40%;
     text-align: left;
-  }
-
-  .logo-big {
-    margin-left: 15%;
+    white-space: pre-line;
   }
 }

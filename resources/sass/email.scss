@@ -1,0 +1,81 @@
+.email {
+	margin: 60px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	.mission {
+		max-width: 630px;
+		white-space: pre-line;
+		font-family: 'Open Sans', 'Montserrat', sans-serif;
+		font-size: 20px;
+
+		.mission-title {
+			margin: 0 0 0 5%;
+			font-size: 45px;
+		}
+	}
+
+	.subscribe {
+		margin-top: 64px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.email-title {
+			font-size: 22px;
+			font-weight: 500;
+		}
+
+		.input {
+			margin: 16px 0;
+			height: 32px;
+			font-size: 18px;
+			width: 400px;
+			border-radius: 5px;
+			border: 1px solid #636b6f;
+			outline: none;
+		}
+
+		.save-mail {
+			transition: .2s;
+			display: inline-block;
+			text-align: center;
+			text-decoration: none;
+			margin: 2px 0;
+			border: solid 1px transparent;
+			border-radius: 4px;
+			padding: 10px 35px;
+			color: #ffffff;
+			background-color: #9555af;
+		}
+
+		.save-mail:active {
+			transform: translateY(1px);
+			filter: saturate(150%);
+		}
+
+		.save-mail:hover {
+			color: #9050aa;
+			border-color: currentColor;
+			background-color: white;
+		}
+
+		.save-mail::-moz-focus-inner {
+			border: none;
+		}
+
+		.save-mail:focus {
+			outline: none;
+			box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
+			0 0 0 1.5px rgba(255, 105, 180, 0.5);
+		}
+
+		.save-mail:focus:not(.focus-visible) {
+			box-shadow: none;
+		}
+
+	}
+}

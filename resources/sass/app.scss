@@ -1,13 +1,14 @@
 @import "header/header.scss";
-@import "slider/slider";
 @import "footer/footer";
 @import "about/about";
 @import "portfolio/portfolio";
 @import "try/try";
 @import "modal/modal";
+@import "./email";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Kalam');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 html {
   min-width: 375px;

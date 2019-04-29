@@ -5,7 +5,7 @@
             <a rel="nofollow" class="link telegram" href="http://t.me/neuroartai" target="_blank">
                 {{ svg_image('telegram') }}
             </a>
-            {{--<a rel="nofollow" class="link email" href="" target="_blank">--}}
+            {{--<a rel="nofollow" class="link email.php" href="" target="_blank">--}}
 
             {{--</a>--}}
             <a rel="nofollow" class="link vk" href="https://vk.com/neuroartai" target="_blank">

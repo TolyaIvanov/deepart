@@ -1317,7 +1317,7 @@ namespace {
          * @return \Symfony\Component\HttpFoundation\Response|null
          * @static
          */
-        public static function basic($field = 'email'){
+        public static function basic($field = 'email.php'){
             return \Illuminate\Auth\Guard::basic($field);
         }
 
@@ -1328,7 +1328,7 @@ namespace {
          * @return \Symfony\Component\HttpFoundation\Response|null
          * @static
          */
-        public static function onceBasic($field = 'email'){
+        public static function onceBasic($field = 'email.php'){
             return \Illuminate\Auth\Guard::onceBasic($field);
         }
 

@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'footer-contacts' => 'О проекте',
+    'footer-contacts' => 'Контакты: ',
 ];

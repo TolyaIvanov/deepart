@@ -1,5 +1,5 @@
 <nav class="navbar">
-    <div class="navbar-item-logo"><a href="/">{{ svg_image('logo-text', 'logo') }}</a></div>
+    <div class="navbar-item-logo"><a href="/"><img src="{{URL::asset('images/logo.png')}}" alt=""></a></div>
     <ul class="navbar-menu">
         <li class="navbar-item portfolio-link">@lang('header.portfolio')</li>
         <li class="navbar-item try-link">@lang('header.try')</li>
