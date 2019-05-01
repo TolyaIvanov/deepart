@@ -41,6 +41,33 @@
   color: #ddd;
 }
 
+.navbar .navbar-menu .change-lang .lang-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .navbar-menu .change-lang .lang-list .lang {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .navbar-menu .change-lang .lang-list .lang a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.navbar .navbar-menu .change-lang .lang-list .lang a:not(.active) {
+  display: none;
+}
+
+.navbar .navbar-menu .change-lang .lang-list .lang .active {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
 .navbar .navbar-item-logo {
   cursor: pointer;
   flex: 0 0 36px;
@@ -50,6 +77,24 @@
 @media only screen and (max-width: 900px) {
   .navbar {
     padding: 0 5px;
+    height: 120px;
+  }
+
+  .navbar .navbar-menu {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: inherit;
+  }
+
+  .navbar .navbar-menu .navbar-item {
+    width: 100px;
+    height: 40px;
+  }
+
+  .navbar .change-lang {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -85,31 +130,49 @@
   overflow: hidden;
   z-index: 10;
   height: 100vh;
-  color: #000;
+  color: #fefefe;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background: url(/images/background.png?7a3f7a9973368d0639b90be411c348e2) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .about .about-bar {
-  max-width: 600px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .about .about-title {
   font-size: 3rem;
   max-width: 550px;
   font-family: Kalam, sans-serif;
-  padding-left: 30px;
 }
 
 .about .about-text {
   font-size: 1.2em;
   font-weight: 500;
   min-width: 300px;
-  text-align: left;
   white-space: pre-line;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    padding-top: 80px;
+  }
+
+  .about .about-title {
+    font-size: 2rem;
+  }
+
+  .about .about-text {
+    font-size: 1.2em;
+    font-weight: 400;
+  }
 }
 
 .portfolio {

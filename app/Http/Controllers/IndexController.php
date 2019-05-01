@@ -45,10 +45,8 @@ class IndexController extends Controller
             ]);
             $share->save();
 
-            Mail::to('gnom228228228@gmail.com')->send(new ContactMail($name, $email));
+//            Mail::to('gnom228228228@gmail.com')->send(new ContactMail($name, $email));
         }
-
-
 
         return redirect('/');
     }

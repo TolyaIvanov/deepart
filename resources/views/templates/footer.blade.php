@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="contacts">
-        <p>@lang('footer.footer-contacts'):</p>
+        <p>@lang('footer.footer-contacts')</p>
         <div class="contact-list">
             <a rel="nofollow" class="link telegram" href="http://t.me/neuroartai" target="_blank">
                 {{ svg_image('telegram') }}
